@@ -43,3 +43,12 @@ test('test damage', () => {
   };
   expect(bowerman).toEqual(result);
 });
+
+test('test damage health is 0', () => {
+  const bowerman = new Bowerman('bowman');
+  bowerman.damage(150);
+  const result = {
+    attack: 25, defence: 25, health: 0, level: 1, name: 'bowman', type: 'Bowman',
+  };
+  expect(bowerman).toEqual(result);
+});
