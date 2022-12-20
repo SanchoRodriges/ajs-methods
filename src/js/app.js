@@ -18,3 +18,7 @@ console.log(magician);
 console.log(undead);
 console.log(zombie);
 console.log(daemon);
+
+const bowerman2 = new Bowerman('bowman');
+bowerman2.health = 0;
+bowerman2.levelUp();
